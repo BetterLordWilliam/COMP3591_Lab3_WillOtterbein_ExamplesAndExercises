@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COMP3951_Lab3_WillOtterbeinTesting2_Pass_By_Reference
+namespace PassByReference
 {
     struct Vector(float iX, float iY)
     {
