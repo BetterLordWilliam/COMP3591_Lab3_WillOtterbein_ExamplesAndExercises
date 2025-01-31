@@ -17,15 +17,15 @@ void reverseIntArray(int* arrHead, int arrLength)
 {
 	for (int i = 0; i < arrLength; i++)
 	{
-		int* temp = *(arrLength + i);
-		*(arrLength + i) = *(arrLength + arrLength - i - 1);
-		*(arrLength + arrLength - i - 1) = *temp;
+		int* temp = *(arrHead + i);
+		*(arrHead + i) = *(arrHead + arrLength - i - 1);
+		*(arrHead + arrLength - i - 1) = *temp;
 	}
 }
 
 int main(int argc, char** argv)
 {
-	int* integerArray = [10,20,30,40,50];
+	int integerArray[] = {10,20,30,40,50};
 	int integerArraySize = sizeof(integerArray) / sizeof(int);
 	printf("%d", integerArraySize);
 }
